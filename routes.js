@@ -21,7 +21,7 @@ function uploadFiles(req, res) {
     console.log(req.body);
     console.log(req.file);
     data = {
-        'name': req.file.fieldname,
+        'name': req.file.originalname,
         'type': req.file.mimetype,
         'size': req.file.size
 
